@@ -16,7 +16,7 @@ class Instruction
 public:
 
 	Instruction() {};							
-	~Instruction() {};	
+	virtual ~Instruction() {};	
 
 	//Virtual function that will be used by transformations and polygons
 	virtual void draw(void) = 0;				
