@@ -32,6 +32,11 @@ int main(int argc, char** argv)
 		instructions = file.getInstructionVector();		
 
 		//Create and run a window
-		Window window(argc, argv);						
+		Window window(argc, argv);	
+		
+		for (auto &object : instructions)
+		{
+			delete object;
+		}		
 	}
 }
